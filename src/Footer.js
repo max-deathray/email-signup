@@ -2,8 +2,8 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <div className="footer">
-      <form>
+    <form>
+      <div className="footer">
         <p className="signup">Sign up for the TLC newsletter.</p>
         <label>
           <input
@@ -12,21 +12,23 @@ export const Footer = () => {
             placeholder="enter email address"
             className="placeholder"
           />
+          <button type="submit" className="next-btn">
+            next
+          </button>
         </label>
-        <button type="submit" className="next-btn">
-          next
-        </button>
-        <input
-          type="checkbox"
-          id="privacyPolicy"
-          name="subscribe"
-          value="newsletter"
-        />
-        <label for="privacyPolicy">
-          I agree to receive information from Discovery Communications in
-          accordance with the following Privay Policy.
-        </label>
-      </form>
-    </div>
+        <div id="checkbox">
+          <input
+            type="checkbox"
+            id="privacyPolicy"
+            name="subscribe"
+            value="newsletter"
+          />
+          <label for="privacyPolicy" id="privacy">
+            I agree to receive information from Discovery Communications in
+            accordance with the following Privay Policy.
+          </label>
+        </div>
+      </div>
+    </form>
   );
 };

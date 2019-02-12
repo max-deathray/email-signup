@@ -4,6 +4,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 .App {
   text-align: center;
 }
@@ -28,6 +32,7 @@ body {
   background-color: #120f23;
   border: 1px solid rgba(136, 136, 136, 0.6);
   display: grid;
+  justify-items: left;
 }
 
 .signup {
@@ -36,6 +41,7 @@ body {
   line-height: 30px;
   font-size: 24px;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 input:placeholder-shown {
@@ -66,15 +72,30 @@ input {
 input[type='checkbox'] {
   color: black;
 }
-
+/*
 label {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
   line-height: 14px;
   font-size: 12px;
-
   color: #888888;
+} */
+
+#privacy {
+  display: grid;
+  justify-items: left;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+  font-size: 12px;
+  color: #888888;
+  justify-content: left;
+}
+
+#checkbox {
+  display: flex;
 }
 
 .next-btn {
