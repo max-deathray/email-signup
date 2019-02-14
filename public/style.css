@@ -124,6 +124,10 @@ input[type='text'] {
   margin-left: 5px;
 }
 
+#names-holder {
+  display: flex;
+}
+
 #privacy {
   font-family: Open Sans;
   font-style: normal;
@@ -169,7 +173,7 @@ input[type='text'] {
   line-height: 24px;
   font-size: 20px;
   text-align: center;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 /* media queries */
@@ -189,6 +193,10 @@ input[type='text'] {
     justify-items: left;
   }
 
+  .signup {
+    font-size: 20px;
+  }
+
   input[type='text'] {
     height: 45px;
     width: 182px;
@@ -201,10 +209,12 @@ input[type='text'] {
   .signup {
     color: #94aebf;
     font-weight: bold;
-    line-height: 30px;
-    font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    line-height: 26px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
   }
 
   #footer-form {
@@ -249,6 +259,15 @@ input[type='text'] {
     display: flex;
     margin-left: -20px;
   }
+
+  .thank-you > h4 {
+    font-size: 28px;
+    margin-top: 50px;
+  }
+
+  .thank-you > p {
+    font-size: 20px;
+  }
 }
 
 /* phone */
@@ -275,7 +294,7 @@ input[type='text'] {
     line-height: 20px;
     font-size: 16px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   input[type='email']:placeholder-shown {
@@ -350,5 +369,10 @@ input[type='text'] {
     line-height: normal;
     font-size: 18px;
     text-align: center;
+  }
+
+  #names-holder {
+    display: flex;
+    flex-direction: column;
   }
 }

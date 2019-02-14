@@ -7,7 +7,7 @@ export class Footer extends Component {
       email: '',
       first: '',
       last: '',
-      stage: 2,
+      stage: 1,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -35,14 +35,14 @@ export class Footer extends Component {
         <form id="footer-form" onSubmit={this.handleSubmit}>
           {this.state.stage === 1 && (
             <div>
-              <p className="signup">Sign up for the TLC newsletter.</p>
+              <h4 className="signup">Sign up for the TLC newsletter.</h4>
             </div>
           )}
           {this.state.stage === 2 && (
             <div>
-              <p className="signup">
+              <h4 className="signup">
                 Almost done! Please enter your first and last name.
-              </p>
+              </h4>
             </div>
           )}
           {this.state.stage === 3 && (
@@ -71,7 +71,7 @@ export class Footer extends Component {
           </div>
           <div>
             {this.state.stage === 2 && (
-              <label>
+              <label id="names-holder">
                 <div id="names">
                   <input
                     required
